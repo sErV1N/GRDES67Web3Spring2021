@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round&display=swap');
+
+body{
+    margin:0px;
+
+}
+nav{
+    background-color: #00364f;
+    color:black;
+}
+ul{
+    padding-left:0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+li{
+    margin: 5px 10px;
+    background-color:none;
+    color:white
+}
+
+li#home {
+    order:0;
+
+}
+
+a{
+    color:white;
+    font-size: 20px;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+  }
+
+.about {
+    justify-content: center;
+}
+
+.imageGallery {
+    display:none;
+}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+@media(min-width: 768px){
+    ul {
+        flex-direction: row;
+    }
+}
+
+li#home {
+    order:1;
+    /*flex-grow: 1;*/
+}
+
+li:nth-last-child(2) {
+    order:2;
+
+}
+
+li:nth-last-child(1){
+    order:3;
+}
