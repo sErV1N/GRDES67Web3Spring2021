@@ -2,9 +2,69 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>ResponsiveDesignJSdemo</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  Willem de Kooning
+    <div class="container">
+      <div class="floater-section small-width-100 med-width-100 large-width-100 beige">
+                                 
+          <div class="center">
+  
+              <img src="images/name" alt="homeimage"></img>
+          </div>        
+              <header>Welcome to the de Kooning Site!
+              </header>
+  
+      </div>
+  <!--section 1 to be fitted with a portrait and bio of de Kooning-->
+ 
+      <div class="floater-section small-width-100 med-width-100 large-width-100 yellow">
+        <div class="center">
+          <div class="img-container">
+                  <img src="images/deKooningPhoto.jpg" alt="portraitDeKooning" style="width:100%;height:auto;border:0;">
+                  </img>
+          </div>
+      </div>  
+        <h4>Willem de Kooning (April 24, 1904 – March 19, 1997) was a Dutch-American abstract expressionist artist. He was born in Rotterdam and moved to the United States in 1926, becoming an American citizen in 1962.[3] In 1943, he married painter Elaine Fried.
+
+            In the years after World War II, de Kooning painted in a style that came to be referred to as abstract expressionism or "action painting", and was part of a group of artists that came to be known as the New York School. Other painters in this group included Jackson Pollock, Elaine de Kooning, Lee Krasner, Franz Kline, Arshile Gorky, Mark Rothko, Hans Hofmann, Nell Blaine, Adolph Gottlieb, Anne Ryan, Robert Motherwell, Philip Guston, Clyfford Still, and Richard Pousette-Dart. De Kooning's retrospective held at MoMA in 2011–2012 made him one of the best-known artists of the 20th century.
+          </h4>                            
+                          
+                          </div>
+  <!--section 2 for gallery?-->
+   
+  <!--section 3 for contact-->
+              <!-------------- The page for form ----------->
+<div data-role="page">
+  <!-------------- The page header ----------->
+  <div data-role="header">
+  <h2>Contact Staff For More Info!</h2>
+  </div>
+  <!-------------- The page main content ----------->
+  <div data-role="main" class="ui-content">
+  <form method="post" action="#pageone" data-ajax="false">
+
+  <label for="name">Name : <span>*</span></label>
+  <input type="text" name="name" id="name" placeholder="Name">
+  <label for="email">Email: <span>*</span></label>
+  <input type="email" id="email" name="email" placeholder="Email"/>
+  
+  
+  </fieldset>
+  <label for="info">Subject:</label>
+  <textarea name="addinfo" id="info" placeholder="Subject Area"></textarea>
+  <label for="info">Message:</label>
+  <textarea name="addinfo" id="info" placeholder="Message Area"></textarea>
+  <input type="submit" data-inline="true" value="Submit" data-theme="b">
+  </form>
+  </div>
+  <!-------------------------------------------------------------
+  End of First page
+  -------------------------------------------------------------->
+  <!--section clearfix-->
+                          </div>
+                          <div class="clearfix"></div>
+
   </body>
 </html>
