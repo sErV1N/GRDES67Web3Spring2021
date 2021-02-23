@@ -103,11 +103,11 @@ div.desc {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create 3 equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 .column img {
@@ -115,7 +115,7 @@ div.desc {
   vertical-align: middle;
   width: 100%;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of three columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
