@@ -5,66 +5,115 @@
     <title>ResponsiveDesignJSdemo</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>ResponsiveDesignJSdemo
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="jquerymobile.css">
+      <link rel="javascript" href="main.js">
+      
+     
+  
+  
+  </head>
   <body>
-    <div class="container">
-      <div class="floater-section small-width-100 med-width-100 large-width-100 beige">
-                                 
-          <div class="center">
-  
-              <img src="images/name" alt="homeimage"></img>
-          </div>        
-              <header>Welcome to the de Kooning Site!
-              </header>
-  
+    <header>
+      <div>
+        <img src="images/DeKooning-banner.jpg" alt="logoBanner">
       </div>
-  <!--section 1 to be fitted with a portrait and bio of de Kooning-->
- 
-      <div class="floater-section small-width-100 med-width-100 large-width-100 yellow">
-        <div class="center">
-          <div class="img-container">
-                  <img src="images/deKooningPhoto.jpg" alt="portraitDeKooning" style="width:100%;height:auto;border:0;">
-                  </img>
+      
+    </header>
+    
+    <main>
+      <h1>Welcome to the de Kooning Site!</h1>
+      <h4>Painter and sculptor of Dutch birth. De Kooning was a leading figure of Abstract Expressionism whose painterly gesturalism transcended the conventional definitions of figuration and abstraction and substantially influenced art after World War II.</h4>
+  
+      <button onclick="myFunction()">Click to Hide/Reveal the Gallery</button>
+
+<div id="myDIV">
+
+        <div class="row">
+          <div class="column">
+            <img src="images/kooning-art1-1024x897.jpg">
+            <img src="images/KooningArt2-oil-Woman-II-canvas-1952.jpg">
+            <img src="images/KooningArt3.jpg">
+            <img src="images/KooningArt4.jpg">
+            <img src="images/KooningArt5.jpg">
+            <img src="images/KooningArt6.jpg">
+            <img src="images/KooningArt7.jpg">
           </div>
-      </div>  
-        <h4>Willem de Kooning (April 24, 1904 – March 19, 1997) was a Dutch-American abstract expressionist artist. He was born in Rotterdam and moved to the United States in 1926, becoming an American citizen in 1962.[3] In 1943, he married painter Elaine Fried.
+          
+          </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+</div>
 
+          
+        <div class="clearfix"></div>
+        </div>
+        <div style="padding:50px;">
+          <div class="center">
+            <div class="img-container">
+                    <img src="images/deKooningPhoto.jpg" alt="portraitDeKooning" style="width:100%;height:auto;border:0;">
+                    </img>
+            </div>
+        </div>  
+          <p>Willem de Kooning (April 24, 1904 – March 19, 1997) was a Dutch-American abstract expressionist artist. He was born in Rotterdam and moved to the United States in 1926, becoming an American citizen in 1962. In 1943, he married painter Elaine Fried.
             In the years after World War II, de Kooning painted in a style that came to be referred to as abstract expressionism or "action painting", and was part of a group of artists that came to be known as the New York School. Other painters in this group included Jackson Pollock, Elaine de Kooning, Lee Krasner, Franz Kline, Arshile Gorky, Mark Rothko, Hans Hofmann, Nell Blaine, Adolph Gottlieb, Anne Ryan, Robert Motherwell, Philip Guston, Clyfford Still, and Richard Pousette-Dart. De Kooning's retrospective held at MoMA in 2011–2012 made him one of the best-known artists of the 20th century.
-          </h4>                            
-                          
-                          </div>
-  <!--section 2 for gallery?-->
-   
-  <!--section 3 for contact-->
+                and parts of zip codes 90210 and 90035</p>
+            
+        </div>
+  <!--section for contact-->
+      <div class="floater-section small-width-100 med-width-100 large-width-100 beige" style="padding: 10px;">
               <!-------------- The page for form ----------->
-<div data-role="page">
-  <!-------------- The page header ----------->
-  <div data-role="header">
-  <h2>Contact Staff For More Info!</h2>
-  </div>
-  <!-------------- The page main content ----------->
-  <div data-role="main" class="ui-content">
-  <form method="post" action="#pageone" data-ajax="false">
+        <div data-role="page">
+          <!-------------- The page header ----------->
+          <div data-role="header">
+          <h2>Contact Staff For More Info!</h2>
+          </div>
+          <!-------------- The page main content ----------->
+          <div data-role="main" class="ui-content">
+          <form method="post" action="#pageone" data-ajax="false">
 
-  <label for="name">Name : <span>*</span></label>
-  <input type="text" name="name" id="name" placeholder="Name">
-  <label for="email">Email: <span>*</span></label>
-  <input type="email" id="email" name="email" placeholder="Email"/>
-  
-  
-  </fieldset>
-  <label for="info">Subject:</label>
-  <textarea name="addinfo" id="info" placeholder="Subject Area"></textarea>
-  <label for="info">Message:</label>
-  <textarea name="addinfo" id="info" placeholder="Message Area"></textarea>
-  <input type="submit" data-inline="true" value="Submit" data-theme="b">
-  </form>
-  </div>
-  <!-------------------------------------------------------------
-  End of First page
-  -------------------------------------------------------------->
-  <!--section clearfix-->
-                          </div>
-                          <div class="clearfix"></div>
+          <label for="name">Name : <span>*</span></label>
+          <input type="text" name="name" id="name" placeholder="Name">
+          <label for="email">Email: <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="Email"/>
+          
+          
+          </fieldset>
+          <label for="info">Subject:</label>
+          <textarea name="addinfo" id="info" placeholder="Subject Area"></textarea>
+          <label for="info">Message:</label>
+          <textarea name="addinfo" id="info" placeholder="Message Area"></textarea>
+          <input type="submit" data-inline="true" value="Submit" data-theme="b">
+          </form>
+          </div>
+          <!-------------------------------------------------------------
+          End of First page
+          -------------------------------------------------------------->
+          <!--section clearfix-->
+        </div>
+          <div class="clearfix"></div>
 
+        
+      </div>
+      </main>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      
   </body>
-</html>
+  </html>
