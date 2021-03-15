@@ -1,0 +1,34 @@
+.alert-danger {
+    color: #5b1c72;
+    background-color: #e5a3ef;
+    border-color: #5b199e;
+}
+
+.alert-link {
+    color: rgb(250, 0, 0);
+}
+.card {
+    padding: 0;
+    margin: 1rem;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+  }
+
+nav ul {
+    font-size: 30px;
+    list-style: none;
+    padding: 0px;
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.row-cols-md-2 > * {
+    flex: 0 0 46%;
+}
