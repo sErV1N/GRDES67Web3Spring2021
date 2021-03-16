@@ -18,6 +18,12 @@ body {
 
 h1 {
     font-family: 'Syne Mono', monospace;
+    color:#F5F5F5 !important;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color:#F5F5F5 !important;
 }
 
 h5 {
