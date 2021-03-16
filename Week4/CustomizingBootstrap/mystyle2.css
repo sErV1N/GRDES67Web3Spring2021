@@ -1,0 +1,59 @@
+.alert-danger {
+    color: #5b1c72;
+    background-color: #E6AF2E;
+    border-color: #5b199e;
+}
+
+.alert-link {
+    color: rgb(250, 0, 0);
+}
+
+body {
+    background-color: #1A1B41;
+}
+.card {
+    padding: 0;
+    margin: 1rem;
+}
+
+h1 {
+    font-family: 'Syne Mono', monospace;
+    color:#F5F5F5 !important;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color:#F5F5F5 !important;
+}
+
+h5 {
+    font-family: 'Syne Mono', monospace;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+  }
+
+nav ul {
+    font-size: 30px;
+    list-style: none;
+    padding: 0px;
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #1A1B41;
+}
+
+.navbar {
+    background-color:#8F6593 !important;
+}
+
+p {
+    color:black !important;
+    font-family: 'Roboto', sans-serif;
+    display:block;
+}
