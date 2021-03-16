@@ -1,6 +1,6 @@
 .alert-danger {
     color: #5b1c72;
-    background-color: #e5a3ef;
+    background-color: #E6AF2E;
     border-color: #5b199e;
 }
 
@@ -14,6 +14,14 @@ body {
 .card {
     padding: 0;
     margin: 1rem;
+}
+
+h1 {
+    font-family: 'Syne Mono', monospace;
+}
+
+h5 {
+    font-family: 'Syne Mono', monospace;
 }
 
 .jumbotron {
@@ -34,8 +42,8 @@ nav ul li {
     color: #1A1B41;
 }
 
-nav {
-    background-color:#1712b8 !important;
+.navbar {
+    background-color:#8F6593 !important;
 }
 
 .row-cols-md-2 > * {
@@ -43,5 +51,7 @@ nav {
 }
 
 p {
-    color:#F5F5F5
+    color:black !important;
+    font-family: 'Roboto', sans-serif;
+    display:block;
 }

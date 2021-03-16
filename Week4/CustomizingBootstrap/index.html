@@ -11,12 +11,31 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- mystyle CSS -->
         <link href="mystyle.css" rel="stylesheet overwrites">
+    <!-- font Override CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Syne+Mono&display=swap" rel="stylesheet">
 
     <title>Week 4 Bootstrap UI and customization</title>
 </head>
 
 <body>
     <header> 
+        <div class="alert alert-danger alert-link alert-dismissible fade show" role="alert">
+            This is an <a hreff="#" class="alert-link">Adaptive Site.</a> See any Featured Topic Below. Click X to Dismiss Alert.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <section class="py-lg-5 text-xl-center container-fluid"
+        style="background-image: url(assets/images/vincentiu-solomon.jpg)">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="text-white">Galaxy Talks</h1>
+            <p class="lead text-start text-light">Something short and leading about the collection below—its contents, the creator,
+              etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+            </p>
+          </div>
+        </div>
+        </section>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -43,95 +62,49 @@
           </div>
         </div>
     </nav>
-        <div class="alert alert-danger alert-link alert-dismissible fade show" role="alert">
-            This is an <a hreff="#" class="alert-link">Adaptive Site.</a> See any Featured Topic Below. Click X to Dismiss Alert.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+        
     </header>
     <main>
 
         </div>
         <div class="container">
-            <div class="card-deck">
+            <div class="card-deck row row-cols-1 row-cols-md-2 g-4">
                 <div class="card">
-                  <img src="assets/images/black-coffee.jpg" class="card-img-top" alt="...">
+                  <img src="assets/images/nasa-orbit1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Whipped, as, acerbic aged cappuccino, barista and spoon percolator aroma. Pumpkin spice kopi-luwak coffee kopi-luwak aromatic, aroma strong a to go coffee beans.</p>
+                    <h5 class="card-title">Orbiting Earth</h5>
+                    <p class="card-text text-dark">The view of the earth from the moon fascinated me - a small disk, 240,000 mniles away. It was hard to think that that little thing held so many problems, so many frustrations. Raging nationalistic interests, famines, wars, pestilence don't show from that distance. I'm convinced that some wayward stranger in a space-craft, coming from some other part of the heavens, could look at earth and never know that it was inhabited at all. But the samw wayward stranger would certainly know instinctively that if the earth were inhabited, then the destinies of all who lived on it must inevitably be interwoven and joined. We are one hunk of ground, water, air, clouds, floating around in space. From out there it really is 'one world'.</p>
                     <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="assets/images/coffee-boost.jpg" class="card-img-top" alt="...">
+                  <img src="assets/images/spacex1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Cream caffeine filter viennese aroma redeye shop redeye ristretto. Ristretto, bar flavour id con panna decaffeinated coffee.</p>
+                    <h5 class="card-title">Space X</h5>
+                    <p class="card-text">I believe that space travel will one day become as common as airline travel is today. I’m convinced, however, that the true future of space travel does not lie with government agencies — NASA is still obsessed with the idea that the primary purpose of the space program is science — but real progress will come from private companies competing to provide the ultimate adventure ride, and NASA will receive the trickle-down benefits.</p>
                     <p class="card-text"><small class="text-muted">Last updated 2 hrs ago</small></p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="assets/images/coffee-main.jpg" class="card-img-top" alt="...">
+                  <img src="assets/images/bryan-gof1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Ristretto french press grounds shop, to go et, frappuccino single origin extraction medium wings iced. Eu black mocha, sugar seasonal arabica, aftertaste qui cultivar organic cup ristretto.</p>
+                    <h5 class="card-title">Where we Live</h5>
+                    <p class="card-text">The most significant things we can think about, when we think about Apollo, is that it has opened for us, for us being the World, a challenge of the future. The door is now cracked, but the promise of that future lies in the young people, not just in America, but the young people all over the world. Learning to live and learning to work together. In order to remind all the peoples of the World, in so many countries throughout the world, that this is what we all are striving for in the future, Jack has picked up a very significant rock, typical of what we have here in the valley of Taurus Littrow. It's a rock composed of many fragments, of many sizes, and many shapes, probably from all parts of the Moon, perhaps billions of years old. But a rock of all sizes and shapes, fragments of all sizes and shapes, and even colors that have grown together to become a cohesive rock outlasting the nature of Space, sort of living together in a very coherent, very peaceful manner. When we return this rock or some of the others like it to Houston, we'd like to share a piece of this rock with so many of the countries throughout the world. We hope that this will be a symbol of what our feelings are, what the feelings of the Apollo Program are, and a symbol of mankind that we can live in peace and harmony in the future.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="assets/images/large-coffee.png" class="card-img-top" alt="...">
+                  <img src="assets/images/greg-rakozy1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">To go, shop mocha, extraction, spoon that single origin frappuccino espresso white frappuccino white. Crema aroma filter robusta half and half roast crema coffee mocha turkish.</p>
+                    <h5 class="card-title">Where Can We Go?</h5>
+                    <p class="card-text">There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?
+
+
+                        We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placekitten.com/200/300" alt="An Adorable Kitten">
-                        <div class="card-body">
-                            <h5 class="card-title">Kitten</h5>
-                            <p class="card-text">Loremipsum dolor sit, amet blah.
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placekitten.com/200/300" alt="An Adorable Kitten">
-                        <div class="card-body">
-                            <h5 class="card-title">Kitten</h5>
-                            <p class="card-text">Loremipsum dolor sit, amet blah.
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placekitten.com/200/300" alt="An Adorable Kitten">
-                        <div class="card-body">
-                            <h5 class="card-title">Kitten</h5>
-                            <p class="card-text">Loremipsum dolor sit, amet blah.
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placekitten.com/200/300" alt="An Adorable Kitten">
-                        <div class="card-body">
-                            <h5 class="card-title">Kitten</h5>
-                            <p class="card-text">Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. Loremipsum dolor sit, amet blah. 
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-              
-            </div>
+            
         </div>
     </main>
 
