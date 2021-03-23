@@ -19,42 +19,46 @@
     </header>
 
     <main class="container">
-        <div class="col">
+
+        <div class="col mt-3">
             <h2>Checkout!</h2>
 
             <form action="#" method="POST">
                 <fieldset>
-                    <div class="mb-3">
-                        <label for="userName">Your Full Name</label>
-                        <input type="text" name="userName" class="form-control" id="userName"
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" name="userName" class="form-control" id="userName"
                             placeholder="e.g. Jennifer">
-                    </div>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="userEmail">Your email address</label>
-
+                        <div class="col-md-6 mb-3">
+                        <label for="userEmail">Your Email</label>
                         </label>
                         <input type="email" name="userEmail" class="form-control" id="userEmail"
                             placeholder="my@email.com">
                     </div>
-                    <div class="mb-3">
-                        <label for="userPass">Your password</label>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="userPass">Your Password</label>
 
                         </label>
                         <input type="password" name="userPass" class="form-control" id="userPass">
                     </div>
-                    <div class="mb-3">
+
+                    <div class="col-md-6 mb-3">
                         <label for="userAddress">Address
 
                         </label>
-                        <input type="text" name="userAddress" id="userAddress" placeholder="e.g. 1234 Nowhere Rd." class="form-control">
+                        <input type="text" name="userAddress" id="userAddress" placeholder="e.g. 1234 Nowhere Rd."
+                            class="form-control">
 
                     </div>
-                    <div class="mb-3">
+
+                    <div class="col-md-6 mb-3">
 
                         <label for="exampleDataList" class="form-label">Your City</label>
-                        <input class="form-control" list="userLocations" id="userCity"
-                            placeholder="Type to search...">
+                        <input class="form-control" list="userLocations" id="userCity" placeholder="Type to search...">
                         <datalist id="userLocations">
                             <option value="San Francisco">
                             <option value="New York">
@@ -64,23 +68,23 @@
                         </datalist>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="userLocation">Your State</label>
-                        <select class="form-select" name="userState" id="userState">
-                            <option selected>Open this select menu</option>
-                            <option value="California">California</option>
-                            <option value="Texas">Texas</option>
-                            <option value="New York">New York</option>
-                            <option value="Other">Other</option>
-
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="userState">Your State</label>
+                        <select class="form-select" id="userState">
+                          <option selected>Choose...</option>
+                          <option value="1">California</option>
+                          <option value="2">Texas</option>
+                          <option value="3">New York</option>
+                          <option value="Other">Other</option>
                         </select>
-                    </div>
+                      </div>
 
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <label for="userZipcode">Zip code
 
                         </label>
-                        <input type="text" name="userZipcode" id="userZipcode" class="form-control" placeholder="e.g. 00000">
+                        <input type="text" name="userZipcode" id="userZipcode" class="form-control"
+                            placeholder="e.g. 00000">
 
                     </div>
 
@@ -95,78 +99,71 @@
                     </div>
 
 
-                    <button type="submit" class="btn btn-warning mb-3">Submit</button>
+                    <button type="submit" class="btn btn-warning mb-3">Proceed to Checkout</button>
+                    </div>
                 </fieldset>
+
                 <h3>Shipping:</h3>
                 <fieldset>
-                    <div class="mb-3">
-                        <label for="shippingName">Recipient's Full Name
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Recipient's Full Name</span>
+                            <input type="text" name="shippingName" placeholder="e.g. Jennifer" id="shippingName" class="form-control">
+                        </div>
 
-                        </label>
-                        <input type="text" name="shippingName" id="shippingName" class="form-control">
+                        <div class="col-md-6 mb-3">
+                            <label for="shippingAddress">Recepient's Address
+                            </label>
+                            <input type="text" name="shippingAddress" id="shippingAddress" class="form-control">
+                        </div>
 
-                    </div>
-                   
-                    <div class="mb-3">
-                        <label for="shippingAddress">Recepient's Address
+                        <div class="col-md-6 mb-3">
 
-                        </label>
-                        <input type="text" name="shippingAddress" id="shippingAddress" class="form-control">
-
-                    </div>
-                    <div class="mb-3">
-
-                        <label for="exampleDataList" class="form-label">Recipient City</label>
-                        <input class="form-control" list="shippingCitys" id="shippingCity"
+                            <label for="exampleDataList" class="form-label">Recipient City</label>
+                            <input class="form-control" list="shippingCitys" id="shippingCity"
                             placeholder="Type to search...">
-                        <datalist id="shippingCitys">
+                            <datalist id="shippingCitys">
                             <option value="San Francisco">
                             <option value="New York">
                             <option value="Seattle">
                             <option value="Los Angeles">
                             <option value="Chicago">
-                        </datalist>
-                    </div>
+                            </datalist>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="shippingStateLocation">Your State</label>
-                        <select class="form-select" name="shippingStateLocation" id="shippingLocation">
+                        <div class="mb-3">
+                            <label for="shippingStateLocation">Recipient State
+                            </label>
+                            <select class="form-select" name="shippingStateLocation" id="shippingStateLocation">
                             <option selected>Open this select menu</option>
                             <option value="California">California</option>
                             <option value="Texas">Texas</option>
                             <option value="New York">New York</option>
                             <option value="Other">Other</option>
+                            </select>
+                        </div>
 
-                        </select>
+                        <div class="mb-3">
+                            <label for="shippingZipcode">Recipient's Zipcode
+                            </label>
+                            <input type="text" name="shippingZipcode" id="shippingZipcode" class="form-control">
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="shippingZipcode">Recipient's Zipcode
-
-                        </label>
-                        <input type="text" name="shippingZipcode" id="shippingZipcode" class="form-control">
-
-
-                    </div>
-
                 </fieldset>
                 <h3>Billing:</h3>
+                <label>
+                    <input type="checkbox"  name="sameadr"> Billing address same as shipping
+                </label>
                 <fieldset>
 
                     <div class="mb-3">
-                        <label for="billingFName">Biller's First Name
+                        <label for="billingName">Billing Full Name
 
                         </label>
-                        <input type="text" name="billingFName" id="billingFName" class="form-control">
+                        <input type="text" name="billingName" id="billingName" class="form-control">
 
                     </div>
-                    <div class="mb-3">
-                        <label for="billingName">Biller's Last Name
-
-                        </label>
-                        <input type="text" name="billingLName" id="billingLName" class="form-control">
-
-                    </div>
+                   
                     <div class="mb-3">
                         <label for="billingAddress">Billing Address
 
@@ -190,7 +187,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="billingStateLocation">Your State</label>
+                        <label for="billingStateLocation">Billing State</label>
                         <select class="form-select" name="billingStateLocation" id="billingStateLocation">
                             <option selected>Open this select menu</option>
                             <option value="California">California</option>
@@ -220,8 +217,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-    <!-- other examples let myVar = "6";
-        let anotherVar = 6; -->
+    
     <script>
         let uNinput = document.getElementById("userName");
         let uAinput = document.getElementById("userAddress");
@@ -231,12 +227,12 @@
         let shNinput = document.getElementById("shippingName");
         let sAinput = document.getElementById("shippingAddress");
         let rCinput = document.getElementById("shippingCity");
-        let sSinput = document.getElementById("shippingState");
+        let sSinput = document.getElementById("shippingStateLocation");
         let sZcinput = document.getElementById("shippingZipcode");
         let bNinput = document.getElementById("billingName");
         let bAinput = document.getElementById("billingAddress");
         let bCinput = document.getElementById("billingCity");
-        let sZcinput = document.getElementById("shippingZipcode");
+        let bSlinput = document.getElementById("billingStateLocation");
         let bZcinput = document.getElementById("billingZipcode");
 
         uNinput.addEventListener("blur", function () {
@@ -321,26 +317,24 @@
 
         })
 
-        //JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
 
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
     </script>
 
 </body>
