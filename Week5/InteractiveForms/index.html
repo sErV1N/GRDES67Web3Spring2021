@@ -25,11 +25,11 @@
             <form action="#" method="POST">
                 <fieldset>
                     <div class="mb-3">
-                        <label for="userFName">Your Full Name</label>
-                        <input type="text" name="userNameF" class="form-control" id="userNameF"
+                        <label for="userName">Your Full Name</label>
+                        <input type="text" name="userName" class="form-control" id="userName"
                             placeholder="e.g. Jennifer">
                     </div>
-                   
+
                     <div class="mb-3">
                         <label for="userEmail">Your email address</label>
 
@@ -47,13 +47,13 @@
                         <label for="userAddress">Address
 
                         </label>
-                        <input type="text" name="userAddress" id="userAddress" class="form-control">
+                        <input type="text" name="userAddress" id="userAddress" placeholder="e.g. 1234 Nowhere Rd." class="form-control">
 
                     </div>
                     <div class="mb-3">
 
                         <label for="exampleDataList" class="form-label">Your City</label>
-                        <input class="form-control" list="userLocations" id="userLocation"
+                        <input class="form-control" list="userLocations" id="userCity"
                             placeholder="Type to search...">
                         <datalist id="userLocations">
                             <option value="San Francisco">
@@ -63,17 +63,36 @@
                             <option value="Chicago">
                         </datalist>
                     </div>
-                    <div class="form-check form-switch mb-3">
-                        <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
-                        <label for="termsAgree" class="form-check-label">Agree to terms of service.</label>
+
+                    <div class="mb-3">
+                        <label for="userLocation">Your State</label>
+                        <select class="form-select" name="userState" id="userState">
+                            <option selected>Open this select menu</option>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="New York">New York</option>
+                            <option value="Other">Other</option>
+
+                        </select>
                     </div>
 
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
+                    <div class="mb-5">
+                        <label for="userZipcode">Zip code
+
+                        </label>
+                        <input type="text" name="userZipcode" id="userZipcode" class="form-control" placeholder="e.g. 00000">
+
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
 
 
                     <button type="submit" class="btn btn-warning mb-3">Submit</button>
@@ -81,19 +100,13 @@
                 <h3>Shipping:</h3>
                 <fieldset>
                     <div class="mb-3">
-                        <label for="shippingFName">Recipient's First Name
+                        <label for="shippingName">Recipient's Full Name
 
                         </label>
-                        <input type="text" name="shippingFName" id="shippingFName" class="form-control">
+                        <input type="text" name="shippingName" id="shippingName" class="form-control">
 
                     </div>
-                    <div class="mb-3">
-                        <label for="shippingLName">Recipient's Last Name
-
-                        </label>
-                        <input type="text" name="shippingLName" id="shippingLName" class="form-control">
-
-                    </div>
+                   
                     <div class="mb-3">
                         <label for="shippingAddress">Recepient's Address
 
@@ -114,19 +127,32 @@
                             <option value="Chicago">
                         </datalist>
                     </div>
+
+                    <div class="mb-3">
+                        <label for="shippingStateLocation">Your State</label>
+                        <select class="form-select" name="shippingStateLocation" id="shippingLocation">
+                            <option selected>Open this select menu</option>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="New York">New York</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+
                     <div class="mb-3">
                         <label for="shippingZipcode">Recipient's Zipcode
 
                         </label>
                         <input type="text" name="shippingZipcode" id="shippingZipcode" class="form-control">
-                        
+
 
                     </div>
 
                 </fieldset>
                 <h3>Billing:</h3>
                 <fieldset>
-                    
+
                     <div class="mb-3">
                         <label for="billingFName">Biller's First Name
 
@@ -163,21 +189,26 @@
                         </datalist>
                     </div>
 
+                    <div class="mb-3">
+                        <label for="billingStateLocation">Your State</label>
+                        <select class="form-select" name="billingStateLocation" id="billingStateLocation">
+                            <option selected>Open this select menu</option>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="New York">New York</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+
                     <div class="mb-5">
-                        <label for="billingZipcode">zip code
+                        <label for="billingZipcode">Zip code
 
                         </label>
                         <input type="text" name="billingZipcode" id="billingZipcode" class="form-control">
 
                     </div>
 
-                    <div class="mb-5">
-                        <label for="billingZipcode">Biller's zip code
-
-                        </label>
-                        <input type="text" name="billingZipcode" id="billingZipcode" class="form-control">
-
-                    </div>
 
                 </fieldset>
             </form>
@@ -193,12 +224,18 @@
         let anotherVar = 6; -->
     <script>
         let uNinput = document.getElementById("userName");
+        let uAinput = document.getElementById("userAddress");
+        let uSinput = document.getElementById("userState");
+        let uCinput = document.getElementById("userCity");
+        let uZcinput = document.getElementById("userZipcode");
         let shNinput = document.getElementById("shippingName");
-        let yLinput = document.getElementById("userLocation");
-        let rCinput = document.getElementById("shippingCity");
         let sAinput = document.getElementById("shippingAddress");
+        let rCinput = document.getElementById("shippingCity");
+        let sSinput = document.getElementById("shippingState");
+        let sZcinput = document.getElementById("shippingZipcode");
         let bNinput = document.getElementById("billingName");
         let bAinput = document.getElementById("billingAddress");
+        let bCinput = document.getElementById("billingCity");
         let sZcinput = document.getElementById("shippingZipcode");
         let bZcinput = document.getElementById("billingZipcode");
 
@@ -211,7 +248,16 @@
 
         })
 
-        yLinput.addEventListener("blur", function () {
+        uAinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                sAinput.value = this.value;
+            } else {
+                alert("Please fill in your address!");
+            }
+
+        })
+
+        uCinput.addEventListener("blur", function () {
             if (this.value != "") {
                 rCinput.value = this.value;
             } else {
@@ -219,6 +265,25 @@
             }
 
         })
+
+        uSinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                sSinput.value = this.value;
+            } else {
+                alert("Please choose your State!");
+            }
+
+        })
+
+        uZcinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                sZcinput.value = this.value;
+            } else {
+                alert("Please input your zipcode!");
+            }
+
+        })
+
 
         shNinput.addEventListener("blur", function () {
             if (this.value != "") {
@@ -228,12 +293,21 @@
             }
 
         })
-        
+
         sAinput.addEventListener("blur", function () {
             if (this.value != "") {
                 bAinput.value = this.value;
             } else {
                 alert("Please fill in your address!");
+            }
+
+        })
+
+        rCinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                bCinput.value = this.value;
+            } else {
+                alert("Please fill in your Ricipient City!");
             }
 
         })
@@ -246,7 +320,27 @@
             }
 
         })
-        
+
+        //JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
     </script>
 
 </body>
