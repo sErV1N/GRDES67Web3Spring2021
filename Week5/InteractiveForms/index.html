@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Interactive Forms</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container">
+        <div class="col">
+            <h2>Checkout!</h2>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="userFName">Your Full Name</label>
+                        <input type="text" name="userNameF" class="form-control" id="userNameF"
+                            placeholder="e.g. Jennifer">
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="userEmail">Your email address</label>
+
+                        </label>
+                        <input type="email" name="userEmail" class="form-control" id="userEmail"
+                            placeholder="my@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userPass">Your password</label>
+
+                        </label>
+                        <input type="password" name="userPass" class="form-control" id="userPass">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userAddress">Address
+
+                        </label>
+                        <input type="text" name="userAddress" id="userAddress" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="exampleDataList" class="form-label">Your City</label>
+                        <input class="form-control" list="userLocations" id="userLocation"
+                            placeholder="Type to search...">
+                        <datalist id="userLocations">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
+                        <label for="termsAgree" class="form-check-label">Agree to terms of service.</label>
+                    </div>
+
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+
+
+                    <button type="submit" class="btn btn-warning mb-3">Submit</button>
+                </fieldset>
+                <h3>Shipping:</h3>
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="shippingFName">Recipient's First Name
+
+                        </label>
+                        <input type="text" name="shippingFName" id="shippingFName" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="shippingLName">Recipient's Last Name
+
+                        </label>
+                        <input type="text" name="shippingLName" id="shippingLName" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="shippingAddress">Recepient's Address
+
+                        </label>
+                        <input type="text" name="shippingAddress" id="shippingAddress" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="exampleDataList" class="form-label">Recipient City</label>
+                        <input class="form-control" list="shippingCitys" id="shippingCity"
+                            placeholder="Type to search...">
+                        <datalist id="shippingCitys">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="shippingZipcode">Recipient's Zipcode
+
+                        </label>
+                        <input type="text" name="shippingZipcode" id="shippingZipcode" class="form-control">
+                        
+
+                    </div>
+
+                </fieldset>
+                <h3>Billing:</h3>
+                <fieldset>
+                    
+                    <div class="mb-3">
+                        <label for="billingFName">Biller's First Name
+
+                        </label>
+                        <input type="text" name="billingFName" id="billingFName" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="billingName">Biller's Last Name
+
+                        </label>
+                        <input type="text" name="billingLName" id="billingLName" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="billingAddress">Billing Address
+
+                        </label>
+                        <input type="text" name="billingAddress" id="billingAddress" class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="exampleDataList" class="form-label">Billing City</label>
+                        <input class="form-control" list="billingCities" id="billingCity"
+                            placeholder="Type to search...">
+                        <datalist id="billingCities">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="billingZipcode">zip code
+
+                        </label>
+                        <input type="text" name="billingZipcode" id="billingZipcode" class="form-control">
+
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="billingZipcode">Biller's zip code
+
+                        </label>
+                        <input type="text" name="billingZipcode" id="billingZipcode" class="form-control">
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <!-- other examples let myVar = "6";
+        let anotherVar = 6; -->
+    <script>
+        let uNinput = document.getElementById("userName");
+        let shNinput = document.getElementById("shippingName");
+        let yLinput = document.getElementById("userLocation");
+        let rCinput = document.getElementById("shippingCity");
+        let sAinput = document.getElementById("shippingAddress");
+        let bNinput = document.getElementById("billingName");
+        let bAinput = document.getElementById("billingAddress");
+        let sZcinput = document.getElementById("shippingZipcode");
+        let bZcinput = document.getElementById("billingZipcode");
+
+        uNinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                shNinput.value = this.value;
+            } else {
+                alert("Please fill in your full name!");
+            }
+
+        })
+
+        yLinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                rCinput.value = this.value;
+            } else {
+                alert("Please choose your city!");
+            }
+
+        })
+
+        shNinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                bNinput.value = this.value;
+            } else {
+                alert("Please fill in your Recipient Name!");
+            }
+
+        })
+        
+        sAinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                bAinput.value = this.value;
+            } else {
+                alert("Please fill in your address!");
+            }
+
+        })
+
+        sZcinput.addEventListener("blur", function () {
+            if (this.value != "") {
+                bZcinput.value = this.value;
+            } else {
+                alert("Please fill in your zipcode!");
+            }
+
+        })
+        
+    </script>
+
+</body>
+
+</html>
