@@ -100,7 +100,7 @@
                     </div>
 
 
-                    <button onclick="CheckoutFunction()" type="submit" class="btn btn-warning mb-3">Proceed to Checkout</button>
+                    <button class="btn btn-warning mb-3" id="checkout">Proceed to Checkout</button>
                     </div>
                 </fieldset>
 
@@ -151,7 +151,6 @@
                             </div>
                         </div>
                     </fieldset>
-
                     
                     <fieldset>
                         <div class="row">
@@ -374,12 +373,17 @@
         function CheckoutFunction() 
         {
             var invisible = document.getElementById("myForm");
+            console.log(showhide);
+
             if (showhide.style.display === "invisible") {
             showhide.style.display = "visible";
             } else {
             showhide.style.display = "invisible";
         }
 
+        $("#checkout").click(function(){
+            CheckoutFunction();
+        })
 
       } 
 
