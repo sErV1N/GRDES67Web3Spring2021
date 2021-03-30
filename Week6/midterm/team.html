@@ -13,9 +13,9 @@
   <title>Midterm: Capsule</title>
 </head>
 
-<body>
+<body class="pt-5">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <h4>CAPSULE</h4>
@@ -46,25 +46,67 @@
   </nav>
   </header>
   <main>
-    <!--CAROUSEL-->
-    <section class="container-fluid">
-      
+    <!--CARD DECK-->
+    <section class="container-fluid mt-4">
+      <h1 class="text-center">Meet the Team</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-foxus-mzukaflani-6368928.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Foxus Mzukaflani</h5>
+              <p class="card-text">Hotel Manager. Proudly overseeing Capsule for over 8 years.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-craig-adderley-1546912.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Craig Adderley</h5>
+              <p class="card-text">HR Manager. Helping foster and encourage an effective team and environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-yushu-6533343.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yuriko Makiguchi</h5>
+              <p class="card-text">Assistant to Hotel Manager. Helping oversee our daily operations as well as whatever the manager needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-hakim-santoso-6071507.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hakim Santoso</h5>
+              <p class="card-text">Customer Representative. Serving our customers by providing product and service information and resolving product and service problems. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-nugroho-wahyu-3119215.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nugroho Wahyu</h5>
+              <p class="card-text">Hotel Support Staff Admin. Oversees our support Staff to help things run smoothly on a day-to-day basis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pexels-nishant-aneja-2494654.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nishant Aneja</h5>
+              <p class="card-text">Head Chef. Serving the finest our place has to offer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!--Booking-->
-    <section class="container">
-      <!-- START THE about text -->
-
-      <!-- /END THE about text -->
-    </section>
-
-    <div class="b-example-divider"></div>
-
-
-
-    <section class="container">
-      <p class="">You hereby assume sole responsibility to serve as the Recipient and shall take other steps (such as source code, which must also be obtained from a web site). Distribution of only part of the LPPL maintenance status `maintained'. The Current Maintainer to take over maintenance. Work as it may be located on the Program and assumes all risks associated with its distribution of the Work, a prominent notice in a commercial product offering, Product X.</p>
-      
-    </section>
+      <!-- /END THE Team content -->
   </main>
   <footer>
     <footer class="container mt-3">
@@ -72,87 +114,6 @@
       <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
   </footer>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign-up for our Newsletter!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <section class="container">
-            <form class="row g-3 needs-validation was-validated" action="index.html" method="POST" novalidate>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">Thank you for filling in your username!</div>
-                <div class="invalid-feedback">Please fill in your first (given) name!</div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">Thank you for your last name!</div>
-                <div class="invalid-feedback">Please fill in your last name!</div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
-                <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-                    required>
-                  <div class="valid-feedback">Thanks for inputting your username!</div>
-                  <div class="invalid-feedback">Please type a username!</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="validationCustom03" class="form-label">Email</label>
-                <input type="email" class="form-control" id="validationCustom03" required>
-                <div class="valid-feedback">Thanks for putting in your email!</div>
-                <div class="invalid-feedback">Please type your email!</div>
-              </div>
-              <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom04" required>
-                <div class="valid-feedback">Thanks for putting in your city!</div>
-                <div class="invalid-feedback">Please type your city!</div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom05" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
-                </select>
-                <div class="valid-feedback">Thanks for putting in your State!</div>
-                <div class="invalid-feedback">Please type your State!</div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationCustom06" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="valid-feedback">Thanks for putting in your Zip!</div>
-                <div class="invalid-feedback">Please type your Zip!</div>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                  </label>
-                  <div class="valid-feedback">Thanks for your agreement!</div>
-                  <div class="invalid-feedback">Please agree to our terms before we continue!</div>
-                </div>
-              </div>
-              
-            </form>
-          </section>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
