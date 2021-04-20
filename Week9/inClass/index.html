@@ -33,6 +33,20 @@
             background-image: repeating-radial-gradient(circle closest-corner at 30% 50%, teal, blue 10%, purple 20%);
         }
         /* positions of circles from closest, farthest key words*/
+        .frame {
+            position: relative;
+        }
+        .grad7 {
+            background-image: linear-gradient(146deg, rgba(32,85,181,1) 13%, rgba(32,85,181,0) 55%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .img-background {
+            background-image: url('pexels-fillipe-gomes-2093252');
+            background-size:cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body>
@@ -47,5 +61,12 @@
     <!--RADIAL GRADIENTS-->
     <section class="grad5"></section>
     <section class="grad6"></section>
+    <!-- BACKGROUND IMAGE -->
+    <div class= "frame">
+        <section class="grad7">
+            <h1>Hello, World!</h1>
+        </section>
+        <section class="img-background"></section>
+    </div>
 </body>
 </html>
