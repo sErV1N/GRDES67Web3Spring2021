@@ -1,0 +1,41 @@
+/* Main Component Styles */
+body {
+    margin:0px;
+}
+
+section {
+    min-height:300px;
+    width:100vw;
+}
+
+.grad1 {
+    background-image: linear-gradient(146deg, red -40%, blue);
+}
+
+
+
+/* NAV STYLES */
+ul {
+    /* list-style: none;
+    padding-left:0px; */
+    border-bottom: tomato 2px solid;
+}
+ul li {
+    /*display: inline-block; */
+    padding: 5px 20px;
+    background-color: transparent;
+    transition: 1400ms;
+    border-bottom: 2px solid transparent;
+}
+
+ul li:hover {
+    background-color: rgba(255, 0, 255, 0.5);
+    border-bottom: 2px solid black;
+    transition: 1400ms;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}

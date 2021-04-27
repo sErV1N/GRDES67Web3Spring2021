@@ -22,8 +22,14 @@
         }
 
         .rotate {
-            top:0;
+            top:500px;
         }
+
+        .scale {
+            top: 1000px;
+            left:100px;
+        }
+
         .translate div {
             background-color: rgba(255, 0 , 0, .2);
 
@@ -34,7 +40,7 @@
         }
 
         .scale div {
-            background-color: (0, 0, 255, .2);
+            background-color: rgba(0, 0, 255, .2);
         }
 
         .original,
@@ -66,7 +72,7 @@
         ul li {
             display: inline-block;
             padding: 5px 20px;
-            background-color: transparent ;
+            background-color: transparent;
             transition: 1400ms;
             border-bottom: 2px solid transparent;
         }
@@ -82,17 +88,20 @@
             color: black;
             text-transform: uppercase;
         }
-
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href-"#">NavLink</a></li>
+                <li><a href="#">NavLink</a></li>
             </ul>
         </nav>
     </header>
+
+
+
+
     <section class="translate">
         <div class="original">
             <p>Hello, world!</p>
@@ -101,6 +110,7 @@
             <p>Hello, world!</p>
         </div>
     </section>
+
     <section class="rotate">
         <div class="original">
             <p>Hello, world!</p>
@@ -116,6 +126,7 @@
         </div>
         <div class="scaled">
             <p>Hello, world!</p>
+        </div>
     </section>
 </body>
 </html>
