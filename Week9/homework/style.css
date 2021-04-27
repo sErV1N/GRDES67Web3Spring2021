@@ -12,35 +12,18 @@ body {
     opacity: 0.3;
 }
 
-section {
-    min-height:300px;
-    width:100vw;
-}
+
 
 .grad1 {
     background-image: linear-gradient(146deg, red -40%, blue);
 }
 
-.overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .col:hover .overlay {
-    opacity: 1;
-  }
 
-
+.card:hover {
+    transition: 1400ms;
+    
+    transform: scale(1.5);
+}
 
 /* NAV STYLES */
 ul {
