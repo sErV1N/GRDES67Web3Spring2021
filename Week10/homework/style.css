@@ -1,0 +1,32 @@
+
+/* Main Component Styles */
+body {
+    margin:0px;
+    animation: color
+}
+
+/* NAV STYLES */
+ul {
+    /* list-style: none;
+    padding-left:0px; */
+    border-bottom: rgb(71, 255, 169) 2px solid;
+}
+ul li {
+    /*display: inline-block; */
+    padding: 5px 20px;
+    background-color: transparent;
+    transition: 1400ms;
+    border-bottom: 2px solid transparent;
+}
+
+ul li:hover {
+    background-color: rgba(174, 0, 255, 0.699);
+    border-bottom: 2px solid black;
+    transition: 1400ms;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
