@@ -2,9 +2,54 @@
 /* Main Component Styles */
 body {
     margin:0px;
-    animation: color
+    animation: colorChange 5s both;
 }
 
+[class^="reveal"] {
+   
+    position: absolute;
+}
+
+.progress {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.progress .outer {
+    width: 100%;
+    height: 14px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.progress .inner {
+    width: 0;
+    height: 100%;
+    background: #33ff3d;
+    animation: loading 2s linear infinite;
+}
+
+.EndWall {
+    position: absolute;
+    z-index: -1;
+}
+
+.backDoorL {
+    background-color: none;
+    animation-name: moveToLeft;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.backDoorR {
+    background-color:none;
+    animation-name: moveToRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode:backwards;
+}
 /* NAV STYLES */
 ul {
     /* list-style: none;
@@ -20,7 +65,7 @@ ul li {
 }
 
 ul li:hover {
-    background-color: rgba(174, 0, 255, 0.699);
+    background-color: rgba(0, 68, 255, 0.699);
     border-bottom: 2px solid black;
     transition: 1400ms;
 }
@@ -29,4 +74,39 @@ a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+}
+
+/* KEY FRAMES */
+@keyframes colorChange {
+    0% {
+        background-color: hsl(0, 100%, 100%);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.411);
+    }
+    /* EXAMPLE OF INTERMEDIARY STATE */
+    100% {
+        background-color: hsla(0, 0%, 0%, 0.247);
+    }
+}
+
+@keyframes loading {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes moveToLeft {
+    from {
+        right: -100%;
+    /* SOME OTHER PARAMETERS */
+        
+    }
+    to {right:100%;} 
+}
+
+@keyframes moveToRight {
+    0% {left: 100%;}
+    /* COULD ADD MORE KEYFRAMES HERE */
+    100% {left:200%;}
 }
