@@ -11,10 +11,37 @@ let cVelX = 2;
 let cVelY = 1;
 
 let cRadius = 75;
+let ballColor = colValue;
+
+const redSlider = document.getElementById("redValue");
+const greenSlider = document.getElementById("greenValue");
+const blueSlider = document.getElementById("blueValue");
+
+//variable declaration of color
+let randomColor = function(){
+    let randR = Math.random()*255;
+    let randG = Math.random()*255;
+    let randB = Math.random()*255;
+    let colValue = "rgb(" + randR + ", "+ randG + ", " + randB + ")";
+    return colValue;
+}
+
+let calculateColor = function(){
+    let valueR = redSlider.value;
+    let valueG = greenSlider.value;
+    let valueB = blueSlider.value;
+    let colValue = "rgb(" + valueR + ", " + valueG + ", "+ valueB + ")";
+    console.log("Calculating Color!");
+    return colValue;
+}
+
 function drawFrame(){
     ctx.clearRect(0, 0, cWidth, cHeight); //giant eraser clearing the space
 
-    ctx.fillStyle = "teal";
+    // if re-generating every frame: 
+    // ballColor = randomColor();
+
+    ctx.fillStyle = ballColor; // define as #FF0CE2, rgb(255, 128, 35), "wheat" the 3 ways
     ctx.strokeStyle = "darkorange";
     
     ctx. beginPath();
@@ -38,6 +65,8 @@ function drawFrame(){
 
 drawFrame();
 
+
+
 canvas2.addEventListener("click" , function(event){
     console.log(event);
     let mouseXp = event.pageX - event.target.offsetLeft; 
@@ -52,5 +81,13 @@ canvas2.addEventListener("click" , function(event){
         cVelX = cVelX * 1.5;
         cVelY = cVelY * 1.5;
     }
+
+})
+
+document.getElementById("colorRand").addEventListener("click", function(){
+    ballColor = randomColor();
+})
+
+document.getElementById("redValue").addEventListener("change", calculateColor){
 
 })
