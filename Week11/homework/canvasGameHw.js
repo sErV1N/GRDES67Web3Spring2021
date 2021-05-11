@@ -57,15 +57,31 @@ canvas2.addEventListener("click", function (event) {
     let distX = Math.abs(cPosX - mouseXp);
     let distY = Math.abs(cPosY - mouseYp);
 
+    var color = ["white", "red","blue","green","yellow","purple"];
+
     if (distX < cRadius && distY < cRadius) {
         console.log("HIT!!!");
         cVelX = cVelX * 1.5;
         cVelY = cVelY * 1.5;
         document.getElementById("TimesClicked").innerHTML = add();
+        
     }
 
 })
 
 function ColorChangeFunction(){
-    document.getElementById("demo").innerHTML = add();
+    var canvas = document.getElementById("myGame");
+    var ctx = canvas.getContext('2d');
+
+
+
+for(var i = 0; i < 10; i++) {
+
+ctx.fillStyle="red";
+}
+    
+   
+    
+    
+    
   }
