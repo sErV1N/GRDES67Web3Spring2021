@@ -4,29 +4,30 @@ const ctx = canvas2.getContext('2d');
 let cWidth = canvas2.width;
 let cHeight = canvas2.height;
 
-let cPosX = cWidth/2; //horizontal center
-let cPosY = cHeight/2; //vertical center
+let cPosX = cWidth / 2; //horizontal center
+let cPosY = cHeight / 2; //vertical center
 
 let cVelX = 2;
 let cVelY = 1;
 
 let cRadius = 75;
-function drawFrame(){
+//drawing the circle
+function drawFrame() {
     ctx.clearRect(0, 0, cWidth, cHeight); //giant eraser clearing the space
 
     ctx.fillStyle = "teal";
     ctx.strokeStyle = "darkorange";
-    
-    ctx. beginPath();
-    ctx.arc(cPosX, cPosY, 75, 0, Math.PI*2);
+
+    ctx.beginPath();
+    ctx.arc(cPosX, cPosY, 75, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
     ctx.closePath();
 
-    if(cPosX + cRadius >= cWidth || cPosX - cRadius <= 0) {
+    if (cPosX + cRadius >= cWidth || cPosX - cRadius <= 0) {
         cVelX = cVelX * -1; //we reverse the horizontal direction
     }
-    if(cPosY + cRadius >= cHeight || cPosY - cRadius <= 0) {
+    if (cPosY + cRadius >= cHeight || cPosY - cRadius <= 0) {
         cVelY = cVelY * -1;
     }
 
@@ -38,19 +39,33 @@ function drawFrame(){
 
 drawFrame();
 
-canvas2.addEventListener("click" , function(event){
+//have the counter for clicks
+var add = (function () {
+    var counter = 0;
+    return function () {
+        counter += 1;
+        return counter;
+    }
+})();
+
+canvas2.addEventListener("click", function (event) {
     console.log(event);
-    let mouseXp = event.pageX - event.target.offsetLeft; 
+    let mouseXp = event.pageX - event.target.offsetLeft;
     let mouseYp = event.pageY - event.target.offsetTop;
     console.log("Mouse X: " + mouseXp + "Mouse Y: " + mouseYp);
 
     let distX = Math.abs(cPosX - mouseXp);
     let distY = Math.abs(cPosY - mouseYp);
 
-    if(distX < cRadius && distY < cRadius){
+    if (distX < cRadius && distY < cRadius) {
         console.log("HIT!!!");
         cVelX = cVelX * 1.5;
         cVelY = cVelY * 1.5;
+        document.getElementById("TimesClicked").innerHTML = add();
     }
 
 })
+
+function ColorChangeFunction(){
+    document.getElementById("demo").innerHTML = add();
+  }
