@@ -11,7 +11,7 @@ let cVelX = 2;
 let cVelY = 1;
 
 let cRadius = 75;
-let ballColor = colValue;
+let ballColor = "rgb(0, 0, 0)";
 
 const redSlider = document.getElementById("redValue");
 const greenSlider = document.getElementById("greenValue");
@@ -22,6 +22,7 @@ let randomColor = function(){
     let randR = Math.random()*255;
     let randG = Math.random()*255;
     let randB = Math.random()*255;
+    
     let colValue = "rgb(" + randR + ", "+ randG + ", " + randB + ")";
     return colValue;
 }
@@ -30,9 +31,10 @@ let calculateColor = function(){
     let valueR = redSlider.value;
     let valueG = greenSlider.value;
     let valueB = blueSlider.value;
+
     let colValue = "rgb(" + valueR + ", " + valueG + ", "+ valueB + ")";
     console.log("Calculating Color!");
-    return colValue;
+    ballColor=colValue;
 }
 
 function drawFrame(){
@@ -88,6 +90,6 @@ document.getElementById("colorRand").addEventListener("click", function(){
     ballColor = randomColor();
 })
 
-document.getElementById("redValue").addEventListener("change", calculateColor){
-
-})
+redSlider.addEventListener("change", calculateColor);
+greenSlider.addEventListener("change", calculateColor);
+blueSlider.addEventListener("change", calculateColor);
